@@ -19,8 +19,9 @@ pool.getConnection((err,connection)=>{
         } 
     }
     if(connection) connection.release();
-    console.log("DB is Connected in your computer, SAUL");
+    console.log("DB is Connected in your computer, MUÑECO!");
     return;
 })
 pool.query=promisify(pool.query);
+
 module.exports= pool;
